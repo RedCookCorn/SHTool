@@ -14,6 +14,7 @@
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
 		716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54E6200F73BE00922596 /* SHBaseVC.m */; };
+		716A54EA200F761B00922596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A54E9200F761B00922596 /* UIKit.framework */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		716A54D6200F66FE00922596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716A54E5200F73BE00922596 /* SHBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseVC.h; sourceTree = "<group>"; };
 		716A54E6200F73BE00922596 /* SHBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseVC.m; sourceTree = "<group>"; };
+		716A54E9200F761B00922596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716A54EA200F761B00922596 /* UIKit.framework in Frameworks */,
 				94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +97,7 @@
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				716A54E9200F761B00922596 /* UIKit.framework */,
 				573EF6E0790454F7C93EE809 /* libPods-SHTool.a */,
 			);
 			name = Frameworks;
