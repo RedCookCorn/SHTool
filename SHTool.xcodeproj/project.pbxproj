@@ -13,6 +13,7 @@
 		716A54D1200F66FE00922596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D0200F66FE00922596 /* Assets.xcassets */; };
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
+		716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54E6200F73BE00922596 /* SHBaseVC.m */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		716A54D3200F66FE00922596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716A54D5200F66FE00922596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716A54D6200F66FE00922596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		716A54E5200F73BE00922596 /* SHBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseVC.h; sourceTree = "<group>"; };
+		716A54E6200F73BE00922596 /* SHBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseVC.m; sourceTree = "<group>"; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,8 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
+				716A54E5200F73BE00922596 /* SHBaseVC.h */,
+				716A54E6200F73BE00922596 /* SHBaseVC.m */,
 			);
 			path = SHBase;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */,
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
