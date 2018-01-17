@@ -47,7 +47,6 @@
 		716A54BB200F66FE00922596 = {
 			isa = PBXGroup;
 			children = (
-				716A54E0200F6E2200922596 /* SHBase */,
 				716A54C6200F66FE00922596 /* SHTool */,
 				716A54C5200F66FE00922596 /* Products */,
 				D964057CF2190CFCE700C083 /* Pods */,
@@ -66,6 +65,7 @@
 		716A54C6200F66FE00922596 /* SHTool */ = {
 			isa = PBXGroup;
 			children = (
+				716A54E1200F6E8900922596 /* SHBase */,
 				716A54C7200F66FE00922596 /* AppDelegate.h */,
 				716A54C8200F66FE00922596 /* AppDelegate.m */,
 				716A54CA200F66FE00922596 /* ViewController.h */,
@@ -79,7 +79,7 @@
 			path = SHTool;
 			sourceTree = "<group>";
 		};
-		716A54E0200F6E2200922596 /* SHBase */ = {
+		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -371,7 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senyuhao.SHTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,7 +386,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senyuhao.SHTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
