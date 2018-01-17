@@ -47,7 +47,7 @@
 		716A54BB200F66FE00922596 = {
 			isa = PBXGroup;
 			children = (
-				716A54DD200F6A0200922596 /* SHBase */,
+				716A54E0200F6E2200922596 /* SHBase */,
 				716A54C6200F66FE00922596 /* SHTool */,
 				716A54C5200F66FE00922596 /* Products */,
 				D964057CF2190CFCE700C083 /* Pods */,
@@ -79,27 +79,11 @@
 			path = SHTool;
 			sourceTree = "<group>";
 		};
-		716A54DD200F6A0200922596 /* SHBase */ = {
+		716A54E0200F6E2200922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
-				716A54DF200F6A2B00922596 /* Common */,
-				716A54DE200F6A2B00922596 /* Const */,
 			);
 			path = SHBase;
-			sourceTree = "<group>";
-		};
-		716A54DE200F6A2B00922596 /* Const */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Const;
-			sourceTree = "<group>";
-		};
-		716A54DF200F6A2B00922596 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
