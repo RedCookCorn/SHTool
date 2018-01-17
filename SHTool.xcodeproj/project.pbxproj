@@ -14,7 +14,6 @@
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
 		716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54E6200F73BE00922596 /* SHBaseVC.m */; };
-		716A54EA200F761B00922596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A54E9200F761B00922596 /* UIKit.framework */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716A54EA200F761B00922596 /* UIKit.framework in Frameworks */,
 				94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
