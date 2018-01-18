@@ -13,7 +13,10 @@
 		716A54D1200F66FE00922596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D0200F66FE00922596 /* Assets.xcassets */; };
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
-		716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54E6200F73BE00922596 /* SHBaseVC.m */; };
+		7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41220106D10004C2A9D /* SHBaseViewController.m */; };
+		7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41320106D10004C2A9D /* SHBaseToast.m */; };
+		7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41D2010714C004C2A9D /* UIView+XibExtension.m */; };
+		7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D42020107DB9004C2A9D /* UIColor+SHExtension.m */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +32,15 @@
 		716A54D3200F66FE00922596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716A54D5200F66FE00922596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716A54D6200F66FE00922596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		716A54E5200F73BE00922596 /* SHBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseVC.h; sourceTree = "<group>"; };
-		716A54E6200F73BE00922596 /* SHBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseVC.m; sourceTree = "<group>"; };
 		716A54E9200F761B00922596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7173D41220106D10004C2A9D /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
+		7173D41320106D10004C2A9D /* SHBaseToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseToast.m; sourceTree = "<group>"; };
+		7173D41420106D10004C2A9D /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
+		7173D41520106D10004C2A9D /* SHBaseToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseToast.h; sourceTree = "<group>"; };
+		7173D41C2010714C004C2A9D /* UIView+XibExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XibExtension.h"; sourceTree = "<group>"; };
+		7173D41D2010714C004C2A9D /* UIView+XibExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XibExtension.m"; sourceTree = "<group>"; };
+		7173D41F20107DB9004C2A9D /* UIColor+SHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SHExtension.h"; sourceTree = "<group>"; };
+		7173D42020107DB9004C2A9D /* UIColor+SHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SHExtension.m"; sourceTree = "<group>"; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,10 +95,32 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
-				716A54E5200F73BE00922596 /* SHBaseVC.h */,
-				716A54E6200F73BE00922596 /* SHBaseVC.m */,
+				7173D41820106D30004C2A9D /* Category */,
+				7173D41120106D10004C2A9D /* Common */,
 			);
 			path = SHBase;
+			sourceTree = "<group>";
+		};
+		7173D41120106D10004C2A9D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7173D41420106D10004C2A9D /* SHBaseViewController.h */,
+				7173D41220106D10004C2A9D /* SHBaseViewController.m */,
+				7173D41320106D10004C2A9D /* SHBaseToast.m */,
+				7173D41520106D10004C2A9D /* SHBaseToast.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7173D41820106D30004C2A9D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7173D41C2010714C004C2A9D /* UIView+XibExtension.h */,
+				7173D41D2010714C004C2A9D /* UIView+XibExtension.m */,
+				7173D41F20107DB9004C2A9D /* UIColor+SHExtension.h */,
+				7173D42020107DB9004C2A9D /* UIColor+SHExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
@@ -235,9 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716A54E7200F73BE00922596 /* SHBaseVC.m in Sources */,
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
+				7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */,
+				7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
+				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
+				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
