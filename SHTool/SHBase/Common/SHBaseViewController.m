@@ -46,7 +46,6 @@ static char barItemBlock;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     tapGesture.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapGesture];
-    
 }
 
 // dismiss responder when tap
