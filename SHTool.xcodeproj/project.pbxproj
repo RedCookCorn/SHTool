@@ -19,6 +19,7 @@
 		7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D42020107DB9004C2A9D /* UIColor+SHExtension.m */; };
 		7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D44920109B20004C2A9D /* UITableViewCell+SHExtension.m */; };
 		7173D44D20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */; };
+		7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D49B2011B42B004C2A9D /* SHBaseAlert.m */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		7173D44920109B20004C2A9D /* UITableViewCell+SHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SHExtension.m"; sourceTree = "<group>"; };
 		7173D44B20109C9A004C2A9D /* UICollectionViewCell+SHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+SHExtension.h"; sourceTree = "<group>"; };
 		7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+SHExtension.m"; sourceTree = "<group>"; };
+		7173D49A2011B42B004C2A9D /* SHBaseAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAlert.h; sourceTree = "<group>"; };
+		7173D49B2011B42B004C2A9D /* SHBaseAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAlert.m; sourceTree = "<group>"; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +117,8 @@
 				7173D41220106D10004C2A9D /* SHBaseViewController.m */,
 				7173D41320106D10004C2A9D /* SHBaseToast.m */,
 				7173D41520106D10004C2A9D /* SHBaseToast.h */,
+				7173D49A2011B42B004C2A9D /* SHBaseAlert.h */,
+				7173D49B2011B42B004C2A9D /* SHBaseAlert.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
+				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
