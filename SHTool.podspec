@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SHTool"
-  s.version      = "0.0.3"
+  s.version      = "0.0.3.1"
   s.summary      = "base tool for developer"
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SHTool/SHBase"
+  s.source_files  = "SHTool/SHBase/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
