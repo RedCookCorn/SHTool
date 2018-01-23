@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SHTool"
-  s.version      = "0.0.3.2"
+  s.version      = "0.0.3.3"
   s.summary      = "base tool for developer"
   s.homepage     = "https://github.com/zhenghaodd01/SHTool"
   s.license      = "MIT"
