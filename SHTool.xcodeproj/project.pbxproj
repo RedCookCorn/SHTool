@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71068DC92016E821003F93CA /* CCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71068DC82016E821003F93CA /* CCA.plist */; };
 		716A54C9200F66FE00922596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54C8200F66FE00922596 /* AppDelegate.m */; };
 		716A54CC200F66FE00922596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54CB200F66FE00922596 /* ViewController.m */; };
 		716A54CF200F66FE00922596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54CD200F66FE00922596 /* Main.storyboard */; };
@@ -20,11 +21,16 @@
 		7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D44920109B20004C2A9D /* UITableViewCell+SHExtension.m */; };
 		7173D44D20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */; };
 		7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D49B2011B42B004C2A9D /* SHBaseAlert.m */; };
+		7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A32011BF48004C2A9D /* SHBaseAddressPicker.m */; };
+		7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A92011E44F004C2A9D /* SHBaseManager.m */; };
+		7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4AC2011E68D004C2A9D /* SHBasePicker.m */; };
+		71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		573EF6E0790454F7C93EE809 /* libPods-SHTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71068DC82016E821003F93CA /* CCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCA.plist; sourceTree = "<group>"; };
 		716A54C4200F66FE00922596 /* SHTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A54C7200F66FE00922596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716A54C8200F66FE00922596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +56,14 @@
 		7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+SHExtension.m"; sourceTree = "<group>"; };
 		7173D49A2011B42B004C2A9D /* SHBaseAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAlert.h; sourceTree = "<group>"; };
 		7173D49B2011B42B004C2A9D /* SHBaseAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAlert.m; sourceTree = "<group>"; };
+		7173D4A22011BF48004C2A9D /* SHBaseAddressPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAddressPicker.h; sourceTree = "<group>"; };
+		7173D4A32011BF48004C2A9D /* SHBaseAddressPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAddressPicker.m; sourceTree = "<group>"; };
+		7173D4A82011E44F004C2A9D /* SHBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseManager.h; sourceTree = "<group>"; };
+		7173D4A92011E44F004C2A9D /* SHBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseManager.m; sourceTree = "<group>"; };
+		7173D4AB2011E68D004C2A9D /* SHBasePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBasePicker.h; sourceTree = "<group>"; };
+		7173D4AC2011E68D004C2A9D /* SHBasePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBasePicker.m; sourceTree = "<group>"; };
+		71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAreaPicker.h; sourceTree = "<group>"; };
+		71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAreaPicker.m; sourceTree = "<group>"; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +118,11 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
+				7173D49D2011BD46004C2A9D /* Resource */,
 				7173D41820106D30004C2A9D /* Category */,
 				7173D41120106D10004C2A9D /* Common */,
+				7173D4A82011E44F004C2A9D /* SHBaseManager.h */,
+				7173D4A92011E44F004C2A9D /* SHBaseManager.m */,
 			);
 			path = SHBase;
 			sourceTree = "<group>";
@@ -119,6 +136,12 @@
 				7173D41520106D10004C2A9D /* SHBaseToast.h */,
 				7173D49A2011B42B004C2A9D /* SHBaseAlert.h */,
 				7173D49B2011B42B004C2A9D /* SHBaseAlert.m */,
+				7173D4AB2011E68D004C2A9D /* SHBasePicker.h */,
+				7173D4AC2011E68D004C2A9D /* SHBasePicker.m */,
+				7173D4A22011BF48004C2A9D /* SHBaseAddressPicker.h */,
+				7173D4A32011BF48004C2A9D /* SHBaseAddressPicker.m */,
+				71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */,
+				71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -136,6 +159,14 @@
 				7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		7173D49D2011BD46004C2A9D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				71068DC82016E821003F93CA /* CCA.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
@@ -218,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */,
+				71068DC92016E821003F93CA /* CCA.plist in Resources */,
 				716A54D1200F66FE00922596 /* Assets.xcassets in Resources */,
 				716A54CF200F66FE00922596 /* Main.storyboard in Resources */,
 			);
@@ -283,14 +315,18 @@
 			files = (
 				7173D44D20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m in Sources */,
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
+				71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */,
 				7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */,
 				7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
+				7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */,
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
 				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
+				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
+				7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

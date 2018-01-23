@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SHBaseManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [SHBaseManager shareInstance].commonPickerChooseBgColor = [UIColor redColor];
+    [SHBaseManager shareInstance].commonPickerSureColor = [UIColor blueColor];
+    [SHBaseManager shareInstance].commonPickerSeperatorColor = [UIColor lightGrayColor];
+    
     return YES;
 }
 

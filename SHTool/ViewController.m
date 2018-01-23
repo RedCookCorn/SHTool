@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SHBaseAreaPicker.h"
+#import "SHBaseManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    SHBaseAreaPicker *areapicker = [[SHBaseAreaPicker alloc] initWithFrame:CGRectMake(0, [SHBaseManager screenHeight] - 265, [SHBaseManager screenWidth], 265) selectBlock:^(id sender) {
+        NSLog(@"sender = %@", sender);
+    }];
+    [self.view addSubview:areapicker];
 }
 
 
