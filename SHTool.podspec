@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   # s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/zhenghaodd01/SHTool.git", :tag => "#{s.version}" }
-  s.source_files  = "SHTool/SHBase/*"
+  s.source_files  = "SHTool/SHBase/*","SHTool/SHBase/**/*.{h, m}"
   # s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "SHTool/SHBase/Resource/*"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   # s.framework  = "SomeFramework"
