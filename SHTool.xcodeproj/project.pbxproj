@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71068DC92016E821003F93CA /* CCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71068DC82016E821003F93CA /* CCA.plist */; };
+		71068E1920184CC7003F93CA /* SHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71068E1820184CC7003F93CA /* SHTool.m */; };
 		716A54C9200F66FE00922596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54C8200F66FE00922596 /* AppDelegate.m */; };
 		716A54CC200F66FE00922596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54CB200F66FE00922596 /* ViewController.m */; };
 		716A54CF200F66FE00922596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54CD200F66FE00922596 /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		573EF6E0790454F7C93EE809 /* libPods-SHTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71068DC82016E821003F93CA /* CCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCA.plist; sourceTree = "<group>"; };
+		71068E1720184CC7003F93CA /* SHTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTool.h; sourceTree = "<group>"; };
+		71068E1820184CC7003F93CA /* SHTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTool.m; sourceTree = "<group>"; };
 		716A54C4200F66FE00922596 /* SHTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A54C7200F66FE00922596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716A54C8200F66FE00922596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71068E1620184CBB003F93CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71068E1720184CC7003F93CA /* SHTool.h */,
+				71068E1820184CC7003F93CA /* SHTool.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		716A54BB200F66FE00922596 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
+				71068E1620184CBB003F93CA /* Base */,
 				7173D49D2011BD46004C2A9D /* Resource */,
 				7173D41820106D30004C2A9D /* Category */,
 				7173D41120106D10004C2A9D /* Common */,
@@ -324,6 +337,7 @@
 				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
+				71068E1920184CC7003F93CA /* SHTool.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
 				7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */,

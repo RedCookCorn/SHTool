@@ -13,5 +13,6 @@
 - (instancetype)initWithFrame:(CGRect)frame
                   selectBlock:(void(^)(id sender))selectBlock;
 
+- (instancetype)initWithFrame:(CGRect)frame;
 
 @end
