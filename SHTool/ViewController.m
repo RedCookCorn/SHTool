@@ -10,6 +10,9 @@
 #import "SHBaseAreaPicker.h"
 #import "SHBaseManager.h"
 
+
+#import "SHPhotoHelper.h"
+
 @interface ViewController ()
 
 @end
@@ -20,16 +23,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    SHBaseAreaPicker *areapicker = [[SHBaseAreaPicker alloc] initWithFrame:CGRectMake(0, [SHBaseManager screenHeight] - 265, [SHBaseManager screenWidth], 265) selectBlock:^(id sender) {
-        NSLog(@"sender = %@", sender);
-    }];
-    [self.view addSubview:areapicker];
+    UIButton *bn = [UIButton buttonWithType:UIButtonTypeCustom];
+    bn.frame = CGRectMake(30, 64, 100, 40);
+    [bn setTitle:@"图片选择" forState:UIControlStateNormal];
+    [bn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [bn addTarget:self action:@selector(imageSelect) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bn];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)imageSelect {
+    [SHPhotoHelper presentFrom:self selectPhotoResult:^(UIImage *image) {
+        
+    }];
 }
 
 

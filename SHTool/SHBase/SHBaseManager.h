@@ -19,6 +19,12 @@
 @property (nonatomic, strong) UIColor *commonPickerSeperatorColor;
 @property (nonatomic, strong) UIColor *commonPickerChooseBgColor;
 
+// photo设置
+@property (nonatomic, strong) UIColor *commonSHPhotoBackgroudColor;
+@property (nonatomic, strong) UIImage *commonSHPhotoTitleImageUp;
+@property (nonatomic, strong) UIImage *commonSHPhotoTitleImageDown;
+@property (nonatomic, strong) UIColor *commonSHPhotoTitleColor;
+
 
 + (instancetype)shareInstance;
 

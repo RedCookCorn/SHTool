@@ -27,7 +27,10 @@ static id _instance;
         _commonPickerCancelColor = [UIColor colorWithHexs:0xdcdcdc];
         _commonPickerSeperatorColor = [UIColor colorWithHexs:0x333333];
         
-        
+        _commonSHPhotoBackgroudColor = [UIColor colorWithHexs:0xf1f1f1];
+        _commonSHPhotoTitleImageUp = [UIImage imageNamed:@"sh_photo_title_down"];
+        _commonSHPhotoTitleImageDown = [UIImage imageNamed:@"sh_photo_title_down"];
+        _commonSHPhotoTitleColor = [UIColor blackColor];
     }
     return self;
 }

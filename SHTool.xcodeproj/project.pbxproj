@@ -10,6 +10,16 @@
 		71068DC92016E821003F93CA /* CCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71068DC82016E821003F93CA /* CCA.plist */; };
 		71068E1920184CC7003F93CA /* SHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71068E1820184CC7003F93CA /* SHTool.m */; };
 		711F4E41201AC6C30021620E /* SHAudioSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E40201AC6C30021620E /* SHAudioSessionTool.m */; };
+		711F4E6F201B0FCF0021620E /* SHPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E6E201B0FCF0021620E /* SHPhotoHelper.m */; };
+		711F4E72201B108C0021620E /* SHPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E71201B108C0021620E /* SHPhotoVC.m */; };
+		711F4E76201B149C0021620E /* SHPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E74201B149C0021620E /* SHPhotoCell.m */; };
+		711F4E77201B149C0021620E /* SHPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711F4E75201B149C0021620E /* SHPhotoCell.xib */; };
+		711F4E7B201B151C0021620E /* SHListAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E78201B151C0021620E /* SHListAlbumCell.m */; };
+		711F4E7C201B151C0021620E /* SHListAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711F4E79201B151C0021620E /* SHListAlbumCell.xib */; };
+		711F4E7F201B157E0021620E /* SHBaseAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E7D201B157E0021620E /* SHBaseAlbum.m */; };
+		711F4E82201B1A000021620E /* SHRightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E81201B1A000021620E /* SHRightImageButton.m */; };
+		711F4E86201B1BE20021620E /* sh_photo_title_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4E84201B1BE20021620E /* sh_photo_title_down@2x.png */; };
+		711F4E87201B1BE20021620E /* sh_photo_title_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4E85201B1BE20021620E /* sh_photo_title_down@3x.png */; };
 		716A54C9200F66FE00922596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54C8200F66FE00922596 /* AppDelegate.m */; };
 		716A54CC200F66FE00922596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54CB200F66FE00922596 /* ViewController.m */; };
 		716A54CF200F66FE00922596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54CD200F66FE00922596 /* Main.storyboard */; };
@@ -37,6 +47,22 @@
 		71068E1820184CC7003F93CA /* SHTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTool.m; sourceTree = "<group>"; };
 		711F4E3F201AC6C20021620E /* SHAudioSessionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHAudioSessionTool.h; sourceTree = "<group>"; };
 		711F4E40201AC6C30021620E /* SHAudioSessionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAudioSessionTool.m; sourceTree = "<group>"; };
+		711F4E6D201B0FCF0021620E /* SHPhotoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPhotoHelper.h; sourceTree = "<group>"; };
+		711F4E6E201B0FCF0021620E /* SHPhotoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHPhotoHelper.m; sourceTree = "<group>"; };
+		711F4E70201B108C0021620E /* SHPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPhotoVC.h; sourceTree = "<group>"; };
+		711F4E71201B108C0021620E /* SHPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHPhotoVC.m; sourceTree = "<group>"; };
+		711F4E73201B149B0021620E /* SHPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPhotoCell.h; sourceTree = "<group>"; };
+		711F4E74201B149C0021620E /* SHPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPhotoCell.m; sourceTree = "<group>"; };
+		711F4E75201B149C0021620E /* SHPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPhotoCell.xib; sourceTree = "<group>"; };
+		711F4E78201B151C0021620E /* SHListAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHListAlbumCell.m; sourceTree = "<group>"; };
+		711F4E79201B151C0021620E /* SHListAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHListAlbumCell.xib; sourceTree = "<group>"; };
+		711F4E7A201B151C0021620E /* SHListAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHListAlbumCell.h; sourceTree = "<group>"; };
+		711F4E7D201B157E0021620E /* SHBaseAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseAlbum.m; sourceTree = "<group>"; };
+		711F4E7E201B157E0021620E /* SHBaseAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseAlbum.h; sourceTree = "<group>"; };
+		711F4E80201B1A000021620E /* SHRightImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHRightImageButton.h; sourceTree = "<group>"; };
+		711F4E81201B1A000021620E /* SHRightImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHRightImageButton.m; sourceTree = "<group>"; };
+		711F4E84201B1BE20021620E /* sh_photo_title_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_photo_title_down@2x.png"; sourceTree = "<group>"; };
+		711F4E85201B1BE20021620E /* sh_photo_title_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_photo_title_down@3x.png"; sourceTree = "<group>"; };
 		716A54C4200F66FE00922596 /* SHTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A54C7200F66FE00922596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716A54C8200F66FE00922596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +123,42 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		711F4E6B201B0F9E0021620E /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				711F4E6C201B0F9E0021620E /* SHPhoto */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		711F4E6C201B0F9E0021620E /* SHPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				711F4E7E201B157E0021620E /* SHBaseAlbum.h */,
+				711F4E7D201B157E0021620E /* SHBaseAlbum.m */,
+				711F4E7A201B151C0021620E /* SHListAlbumCell.h */,
+				711F4E78201B151C0021620E /* SHListAlbumCell.m */,
+				711F4E79201B151C0021620E /* SHListAlbumCell.xib */,
+				711F4E73201B149B0021620E /* SHPhotoCell.h */,
+				711F4E74201B149C0021620E /* SHPhotoCell.m */,
+				711F4E75201B149C0021620E /* SHPhotoCell.xib */,
+				711F4E6D201B0FCF0021620E /* SHPhotoHelper.h */,
+				711F4E6E201B0FCF0021620E /* SHPhotoHelper.m */,
+				711F4E70201B108C0021620E /* SHPhotoVC.h */,
+				711F4E71201B108C0021620E /* SHPhotoVC.m */,
+			);
+			path = SHPhoto;
+			sourceTree = "<group>";
+		};
+		711F4E83201B1BE20021620E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				711F4E84201B1BE20021620E /* sh_photo_title_down@2x.png */,
+				711F4E85201B1BE20021620E /* sh_photo_title_down@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		716A54BB200F66FE00922596 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +197,7 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
+				711F4E6B201B0F9E0021620E /* Function */,
 				71068E1620184CBB003F93CA /* Base */,
 				7173D49D2011BD46004C2A9D /* Resource */,
 				7173D41820106D30004C2A9D /* Category */,
@@ -160,6 +223,8 @@
 				7173D4A32011BF48004C2A9D /* SHBaseAddressPicker.m */,
 				71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */,
 				71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */,
+				711F4E80201B1A000021620E /* SHRightImageButton.h */,
+				711F4E81201B1A000021620E /* SHRightImageButton.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -182,6 +247,7 @@
 		7173D49D2011BD46004C2A9D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				711F4E83201B1BE20021620E /* Images */,
 				71068DC82016E821003F93CA /* CCA.plist */,
 			);
 			path = Resource;
@@ -267,8 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */,
+				711F4E7C201B151C0021620E /* SHListAlbumCell.xib in Resources */,
+				711F4E77201B149C0021620E /* SHPhotoCell.xib in Resources */,
 				71068DC92016E821003F93CA /* CCA.plist in Resources */,
+				711F4E87201B1BE20021620E /* sh_photo_title_down@3x.png in Resources */,
 				716A54D1200F66FE00922596 /* Assets.xcassets in Resources */,
+				711F4E86201B1BE20021620E /* sh_photo_title_down@2x.png in Resources */,
 				716A54CF200F66FE00922596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,16 +403,22 @@
 			files = (
 				7173D44D20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m in Sources */,
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
+				711F4E72201B108C0021620E /* SHPhotoVC.m in Sources */,
+				711F4E82201B1A000021620E /* SHRightImageButton.m in Sources */,
 				71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */,
+				711F4E76201B149C0021620E /* SHPhotoCell.m in Sources */,
 				7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */,
 				7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */,
+				711F4E7B201B151C0021620E /* SHListAlbumCell.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
+				711F4E6F201B0FCF0021620E /* SHPhotoHelper.m in Sources */,
 				7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */,
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
 				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
 				71068E1920184CC7003F93CA /* SHTool.m in Sources */,
+				711F4E7F201B157E0021620E /* SHBaseAlbum.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
 				711F4E41201AC6C30021620E /* SHAudioSessionTool.m in Sources */,
