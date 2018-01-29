@@ -190,6 +190,7 @@
     for (PHAssetCollection *assetCollection in self.mAllAssetCollection) {
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
         options.synchronous = YES;
+        options.networkAccessAllowed = YES;
         PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil];
         SHBaseAlbum *base = [[SHBaseAlbum alloc] init];
         base.text = assetCollection.localizedTitle;
