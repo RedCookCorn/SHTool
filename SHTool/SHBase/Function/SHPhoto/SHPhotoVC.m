@@ -18,7 +18,7 @@
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface SHPhotoVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource>
+@interface SHPhotoVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *mCollection;
 @property (nonatomic, strong) NSMutableArray *listArr;
@@ -32,6 +32,7 @@
 
 @property (nonatomic, assign) NSInteger selectAlbum;
 @property (nonatomic, strong) SHRightImageButton *titleButton;
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
 
 @end
 
@@ -165,6 +166,7 @@
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     // 同步获得图片, 只会返回1张图片
     options.synchronous = YES;
+    options.networkAccessAllowed = YES;
     // 获得某个相簿中的所有PHAsset对象
     PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil];
     for (PHAsset *asset in assets) {
@@ -203,6 +205,19 @@
         [self.listAlbum addObject:base];
     }
     [self.mTable reloadData];
+}
+
+- (BOOL)checkLocalPhoto:(PHAsset *)asset {
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    options.synchronous = YES;
+    options.resizeMode = PHImageRequestOptionsResizeModeFast;
+    options.networkAccessAllowed = NO;
+    
+    __block BOOL isLocalPhoto = NO;
+    [[PHImageManager defaultManager] requestImageDataForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+        isLocalPhoto = imageData ? YES : NO;
+    }];
+    return isLocalPhoto;
 }
 
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
@@ -260,8 +275,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-        // 点击事件
-        NSLog(@"clicked");
+        [self openCamera];
     }
 }
 
@@ -303,6 +317,40 @@
         [self.selectIndexArr removeAllObjects];
         [self updateView:indexPath.row];
     }
+}
+
+#pragma mark - PhotoCamera
+- (void)openCamera {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [SHBaseToast showToast:@"没有摄像头"];
+        return;
+    }
+    
+    if (!_imagePickerController) {
+        _imagePickerController = [[UIImagePickerController alloc] init];
+        _imagePickerController.delegate = self;
+        _imagePickerController.allowsEditing = YES;
+        _imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    [self presentViewController:_imagePickerController animated:YES completion:nil];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+// 拍摄完成
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo {
+    if(picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+        // 图片回调
+        if (self.imageDataBlock) {
+            self.imageDataBlock(@[image]);
+        }
+        [self backAction];
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// 取消拍摄
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
