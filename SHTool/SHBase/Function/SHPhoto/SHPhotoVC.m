@@ -260,7 +260,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-        
+        // 点击事件
+        NSLog(@"clicked");
     }
 }
 
