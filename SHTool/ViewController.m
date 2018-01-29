@@ -32,8 +32,8 @@
 }
 
 - (void)imageSelect {
-    [SHPhotoHelper presentFrom:self selectPhotoResult:^(UIImage *image) {
-        
+    [SHPhotoHelper presentFrom:self selectPhotoResult:^(NSArray *imageArray) {
+        NSLog(@"images = %@", imageArray);
     }];
 }
 

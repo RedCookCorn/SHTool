@@ -20,22 +20,26 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.backgroundColor = [UIColor blackColor];
 }
 
 - (void)cameraCell {
     _bnSelect.hidden = YES;
-    _imgIcon.image = [UIImage imageNamed:@"camera"];
+    _imgIcon.image = [UIImage imageNamed:@"sh_image_camera"];
+    _imgIcon.contentMode = UIViewContentModeCenter;
 }
 
 - (void)updateCell:(UIImage *)img {
     _bnSelect.hidden = NO;
     _imgIcon.image = img;
+    _imgIcon.contentMode = UIViewContentModeScaleAspectFill;
 }
 
 - (void)updateCell:(UIImage *)img selected:(BOOL)selected {
     _bnSelect.hidden = NO;
     _imgIcon.image = img;
     _bnSelect.selected = selected;
+    _imgIcon.contentMode = UIViewContentModeScaleAspectFill;
 }
 
 // 选择操作

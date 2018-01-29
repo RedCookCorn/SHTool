@@ -11,9 +11,9 @@
 @interface SHPhotoHelper : NSObject
 
 // 单选 present
-+ (void)presentFrom:(UIViewController *)vc selectPhotoResult:(void(^)(UIImage *image))resultBlock;
++ (void)presentFrom:(UIViewController *)vc selectPhotoResult:(void(^)(NSArray *imageArray))resultBlock;
 
 // 单选 navigation 
-+ (void)navigationFrom:(UIViewController *)vc selectPhotoResult:(void(^)(UIImage *image))resultBlock;
++ (void)navigationFrom:(UIViewController *)vc selectPhotoResult:(void(^)(NSArray *imageArray))resultBlock;
 
 @end

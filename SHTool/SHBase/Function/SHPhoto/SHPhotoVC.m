@@ -37,6 +37,29 @@
 
 @implementation SHPhotoVC
 
+- (void)backAction {
+    if ([self.navigationController.viewControllers count] > 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)saveAction {
+    if ([self.selectIndexArr count] == 0) {
+        [SHBaseToast showToast:@"您还未选择图片，请选择图片便于上传" inView:self.view];
+    } else {
+        NSMutableArray *tempArr = [[NSMutableArray alloc] init];
+        for (NSIndexPath *indexpath in self.selectIndexArr) {
+            [tempArr addObject:self.listArr[indexpath.row - 1]];
+        }
+        if (self.imageDataBlock) {
+            self.imageDataBlock(tempArr);
+        }
+        [self backAction];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -59,6 +82,14 @@
                 [tself updateView:0];
             });
         }
+    }];
+    
+    [self SHBaseLeftBarButtonItemWithImage:@"sh_back_arrow" block:^{
+        [tself backAction];
+    }];
+    
+    [self SHBaseRightBarButtonItemWithTitle:@"确定" block:^{
+        [tself saveAction];
     }];
 }
 

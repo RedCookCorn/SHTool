@@ -11,15 +11,25 @@
 
 @implementation SHPhotoHelper
 
-+ (void)presentFrom:(UIViewController *)vc selectPhotoResult:(void(^)(UIImage *image))resultBlock {
++ (void)presentFrom:(UIViewController *)vc selectPhotoResult:(void(^)(NSArray *imageArray))resultBlock {
     SHPhotoVC *photovc = [SHPhotoVC new];
-    
+    photovc.maxSelect = 3;
+    photovc.imageDataBlock = ^(NSArray *imageDataArr) {
+        if (resultBlock) {
+            resultBlock(imageDataArr);
+        }
+    };
     [vc presentViewController:[[UINavigationController alloc] initWithRootViewController:photovc] animated:YES completion:nil];
 }
 
-+ (void)navigationFrom:(UIViewController *)vc selectPhotoResult:(void(^)(UIImage *image))resultBlock {
++ (void)navigationFrom:(UIViewController *)vc selectPhotoResult:(void(^)(NSArray *imageArray))resultBlock {
     SHPhotoVC *photovc = [SHPhotoVC new];
-    
+    photovc.maxSelect = 3;
+    photovc.imageDataBlock = ^(NSArray *imageDataArr) {
+        if (resultBlock) {
+            resultBlock(imageDataArr);
+        }
+    };
     [vc.navigationController pushViewController:photovc animated:YES];
 }
 

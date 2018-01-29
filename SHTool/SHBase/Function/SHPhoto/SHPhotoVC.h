@@ -6,9 +6,9 @@
 //  Copyright © 2018 郑浩. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SHBaseViewController.h"
 
-@interface SHPhotoVC : UIViewController
+@interface SHPhotoVC : SHBaseViewController
 
 @property (nonatomic, copy) void(^imageDataBlock)(NSArray *imageDataArr);
 
