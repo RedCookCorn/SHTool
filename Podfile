@@ -6,5 +6,6 @@ target 'SHTool' do
   # use_frameworks!
 
   # Pods for SHTool
+  pod 'GTMBase64'
 
 end

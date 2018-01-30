@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonCryptor.h>
+#import <CommonCrypto/CommonCrypto.h>
+#import <Security/Security.h>
 
 @interface SHTool : NSObject
 
@@ -30,5 +33,16 @@
 
 // 固话判断
 + (BOOL)validTelephone:(NSString *)string;
+
+// MD5加密
++ (NSString *)encodeMd5String:(NSString *)srcString;
+
+// 32位 MD5加密
++ (NSString *)encodeMd5_32Bit_String:(NSString *)srcString;
+
+// 3Des加解密
++ (NSString *)tripleDES:(NSString *)srcString
+                 desKey:(NSString *)keyString
+       encryptOrDecrypt:(CCOperation)encryptOrDecrypt;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "SHTool.h"
+#import <GTMBase64/GTMBase64.h>
 
 @implementation SHTool
 
@@ -203,5 +204,84 @@
     NSString * PHS = @"\\d{3}-\\d{8}|\\d{4}-\\d{7}|\\d{4}-\\d{8}";
     NSPredicate *regextestphs = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", PHS];
     return [regextestphs evaluateWithObject:string];
+}
+
+// MD5加密
++ (NSString *)encodeMd5String:(NSString *)srcString {
+    const char* str = [srcString UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(str, (uint32_t)strlen(str), result);
+    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+    for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++)
+        [ret appendFormat:@"%2x",result[i]];
+    return ret;
+}
+
+// 32位 MD5加密
++ (NSString *)encodeMd5_32Bit_String:(NSString *)srcString {
+    const char *cStr = [srcString UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, (UInt32)strlen(cStr), digest );
+    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [result appendFormat:@"%02x", digest[i]];
+    
+    return [result uppercaseString];
+}
+
+// 3Des加解密
++ (NSString *)tripleDES:(NSString *)srcString
+                 desKey:(NSString *)keyString
+       encryptOrDecrypt:(CCOperation)encryptOrDecrypt {
+    const void *vplainText;
+    size_t plainTextBufferSize;
+    
+    if (encryptOrDecrypt == kCCDecrypt) {
+        //解密
+        NSData *EncryptData = [GTMBase64 decodeData:[srcString dataUsingEncoding:NSUTF8StringEncoding]];
+        plainTextBufferSize = [EncryptData length];
+        vplainText = [EncryptData bytes];
+    } else {
+        //加密
+        NSData* data = [srcString dataUsingEncoding:NSUTF8StringEncoding];
+        plainTextBufferSize = [data length];
+        vplainText = (const void *)[data bytes];
+    }
+    
+    CCCryptorStatus ccStatus;
+    uint8_t *bufferPtr = NULL;
+    size_t bufferPtrSize = 0;
+    size_t movedBytes = 0;
+    
+    bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+    memset((void *)bufferPtr, 0x0, bufferPtrSize);
+    
+    const void *vkey = (const void *)[keyString UTF8String];
+    ccStatus = CCCrypt(encryptOrDecrypt,
+                       kCCAlgorithm3DES,
+                       kCCOptionPKCS7Padding | kCCOptionECBMode,
+                       vkey,
+                       kCCKeySize3DES,
+                       nil,
+                       vplainText,
+                       plainTextBufferSize,
+                       (void *)bufferPtr,
+                       bufferPtrSize,
+                       &movedBytes);
+    if (ccStatus == kCCSuccess)
+        NSLog(@"SUCCESS");
+    
+    NSString *result;
+    if (encryptOrDecrypt == kCCDecrypt) {
+        result = [[NSString alloc] initWithData:[NSData dataWithBytes:(const void *)bufferPtr
+                                                               length:(NSUInteger)movedBytes]
+                                       encoding:NSUTF8StringEncoding];
+    } else {
+        NSData * myData = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
+        result = [GTMBase64 stringByEncodingData:myData];
+    }
+    free(bufferPtr);
+    return result;
 }
 @end
