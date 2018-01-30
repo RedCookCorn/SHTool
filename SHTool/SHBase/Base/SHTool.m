@@ -190,4 +190,18 @@
     float val;
     return [scan scanFloat:&val] && [scan isAtEnd];
 }
+
+// 邮箱判断
++ (BOOL)validEmail:(NSString *)string {
+    NSString *regex = @"\\b([a-zA-Z0-9%_.+\\-]+)@([a-zA-Z0-9.\\-]+?\\.[a-zA-Z]{2,6})\\b";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    return [pred evaluateWithObject:string];
+}
+
+// 固话判断
++ (BOOL)validTelephone:(NSString *)string {
+    NSString * PHS = @"\\d{3}-\\d{8}|\\d{4}-\\d{7}|\\d{4}-\\d{8}";
+    NSPredicate *regextestphs = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", PHS];
+    return [regextestphs evaluateWithObject:string];
+}
 @end

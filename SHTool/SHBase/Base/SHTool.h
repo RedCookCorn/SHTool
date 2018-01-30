@@ -24,4 +24,11 @@
 
 // judge whether pure float
 + (BOOL)pureFloat:(NSString *)string;
+
+// 邮箱判断
++ (BOOL)validEmail:(NSString *)string;
+
+// 固话判断
++ (BOOL)validTelephone:(NSString *)string;
+
 @end
