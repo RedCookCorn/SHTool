@@ -31,6 +31,12 @@ static id _instance;
         _commonSHPhotoTitleImageUp = [UIImage imageNamed:@"sh_photo_title_down"];
         _commonSHPhotoTitleImageDown = [UIImage imageNamed:@"sh_photo_title_down"];
         _commonSHPhotoTitleColor = [UIColor blackColor];
+        
+        // 设置ActionSheet属性
+        _commonSheetBgColor = [UIColor colorWithRed:214.0/255.0f green:215.0/255.0f blue:222/255.0f alpha:1.0f];
+        _commonSheetArrayButtonColor = [UIColor colorWithRed:254/255.0f green:254/255.0f blue:254/255.0f alpha:1.0f];
+        _commonSheetSeperatorColor = [UIColor colorWithRed:206/255.0f green:206/255.0f blue:206/255.0f alpha:1.0f];
+        _commonSheetButtonHeight = 44.0f;
     }
     return self;
 }

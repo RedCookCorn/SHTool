@@ -9,11 +9,6 @@
 #import "SHBaseActionSheet.h"
 #import "SHBaseManager.h"
 
-#define ButtonHeight 48.0f
-#define ActionBackGroudColor [UIColor colorWithRed:214.0/255.0f green:215.0/255.0f blue:222/255.0f alpha:1.0f]
-#define ButtonColor [UIColor colorWithRed:254/255.0f green:254/255.0f blue:254/255.0f alpha:1.0f]
-#define LineColor [UIColor colorWithRed:206/255.0f green:206/255.0f blue:206/255.0f alpha:1.0f]
-
 @interface CustomActionSheet : UIView {
     UIView *mask;
 }
@@ -49,7 +44,7 @@
                   otherColor:(UIColor *)otherColor {
     
     if (self = [super init]) {
-        self.backgroundColor = ActionBackGroudColor;
+        self.backgroundColor = [SHBaseManager shareInstance].commonSheetBgColor;
         self.block = block;
         self.frame = CGRectMake(0, 0, [SHBaseManager screenWidth], 100);
         CGFloat top = 0.0f;
@@ -70,7 +65,7 @@
             [self addSubview:titleLabel];
             
             UILabel *line10 = [[UILabel alloc] initWithFrame:CGRectMake(0, top-1, self.frame.size.width, 0.5f)];
-            line10.backgroundColor = LineColor;
+            line10.backgroundColor = [SHBaseManager shareInstance].commonSheetSeperatorColor;
             [self addSubview:line10];
         }
         
@@ -82,7 +77,7 @@
             }else {
                 otherButton.tag = otherButtonCount+1 - i;
             }
-            [otherButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth],ButtonHeight)];
+            [otherButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth], [SHBaseManager shareInstance].commonSheetButtonHeight)];
             [otherButton setTitle:otherButtonTitles[i] forState:UIControlStateNormal];
             if (otherColor) {
                 [otherButton setTitleColor:otherColor forState:UIControlStateNormal];
@@ -90,13 +85,13 @@
                 [otherButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             }
             [otherButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-            [otherButton setBackgroundColor:ButtonColor];
+            [otherButton setBackgroundColor:[SHBaseManager shareInstance].commonSheetArrayButtonColor];
             [otherButton addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:otherButton];
-            top+=ButtonHeight;
+            top+=[SHBaseManager shareInstance].commonSheetButtonHeight;
             
             UILabel *line2 = [[UILabel alloc] initWithFrame:CGRectMake(0, otherButton.frame.size.height-0.5, [SHBaseManager screenWidth], 0.5)];
-            line2.backgroundColor = LineColor;
+            line2.backgroundColor = [SHBaseManager shareInstance].commonSheetSeperatorColor;
             [otherButton addSubview:line2];
         }
         if (destructiveButtonTitle == nil || [destructiveButtonTitle isEqualToString:@""]) {
@@ -104,7 +99,7 @@
         }else {
             UIButton *destructiveButton = [UIButton buttonWithType:UIButtonTypeSystem];
             destructiveButton.tag = 1;
-            [destructiveButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth], ButtonHeight)];
+            [destructiveButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth], [SHBaseManager shareInstance].commonSheetButtonHeight)];
             if (destructiveColor) {
                 [destructiveButton setTitleColor:destructiveColor forState:UIControlStateNormal];
             }else {
@@ -115,12 +110,12 @@
             [destructiveButton setBackgroundColor:[UIColor whiteColor]];
             [destructiveButton addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:destructiveButton];
-            top+=ButtonHeight;
+            top+=[SHBaseManager shareInstance].commonSheetButtonHeight;
         }
         
         UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeSystem];
         cancelButton.tag = 0;
-        [cancelButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth], ButtonHeight)];
+        [cancelButton setFrame:CGRectMake(0, top, [SHBaseManager screenWidth], [SHBaseManager shareInstance].commonSheetButtonHeight)];
         [cancelButton setTitle:cancelTitle forState:UIControlStateNormal];
         if (cancelColor) {
             [cancelButton setTitleColor:cancelColor forState:UIControlStateNormal];
@@ -133,10 +128,10 @@
         [self addSubview:cancelButton];
         
         UILabel *line4 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [SHBaseManager screenWidth], 0.5)];
-        line4.backgroundColor = LineColor;
+        line4.backgroundColor = [SHBaseManager shareInstance].commonSheetSeperatorColor;
         [cancelButton addSubview:line4];
         
-        top += ButtonHeight;
+        top += [SHBaseManager shareInstance].commonSheetButtonHeight;
         self.frame = CGRectMake(0, 0, [SHBaseManager screenWidth], top);
     }
     return self;

@@ -19,6 +19,12 @@
 @property (nonatomic, strong) UIColor *commonPickerSeperatorColor;
 @property (nonatomic, strong) UIColor *commonPickerChooseBgColor;
 
+// 设置ActionSheet属性
+@property (nonatomic, strong) UIColor *commonSheetBgColor;
+@property (nonatomic, strong) UIColor *commonSheetArrayButtonColor;
+@property (nonatomic, strong) UIColor *commonSheetSeperatorColor;
+@property (nonatomic, assign) CGFloat commonSheetButtonHeight;
+
 // photo设置
 @property (nonatomic, strong) UIColor *commonSHPhotoBackgroudColor;
 @property (nonatomic, strong) UIImage *commonSHPhotoTitleImageUp;
