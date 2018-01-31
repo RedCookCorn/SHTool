@@ -45,6 +45,9 @@
 		7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A92011E44F004C2A9D /* SHBaseManager.m */; };
 		7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4AC2011E68D004C2A9D /* SHBasePicker.m */; };
 		71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */; };
+		71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D2700F2021700100C709AB /* SHBaseKeyChain.m */; };
+		71D270132021709000C709AB /* SHBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D270122021709000C709AB /* SHBaseTextField.m */; };
+		71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D270152021714E00C709AB /* SHBaseActionSheet.m */; };
 		94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 573EF6E0790454F7C93EE809 /* libPods-SHTool.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +115,12 @@
 		7173D4AC2011E68D004C2A9D /* SHBasePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBasePicker.m; sourceTree = "<group>"; };
 		71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAreaPicker.h; sourceTree = "<group>"; };
 		71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAreaPicker.m; sourceTree = "<group>"; };
+		71D2700E2021700100C709AB /* SHBaseKeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseKeyChain.h; sourceTree = "<group>"; };
+		71D2700F2021700100C709AB /* SHBaseKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseKeyChain.m; sourceTree = "<group>"; };
+		71D270112021709000C709AB /* SHBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseTextField.h; sourceTree = "<group>"; };
+		71D270122021709000C709AB /* SHBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseTextField.m; sourceTree = "<group>"; };
+		71D270142021714E00C709AB /* SHBaseActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseActionSheet.h; sourceTree = "<group>"; };
+		71D270152021714E00C709AB /* SHBaseActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseActionSheet.m; sourceTree = "<group>"; };
 		8622654B3B859312F272DFFE /* Pods-SHTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A3EFCE0ABD18F5032D4AB0 /* Pods-SHTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHTool/Pods-SHTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,6 +258,12 @@
 				71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */,
 				711F4E80201B1A000021620E /* SHRightImageButton.h */,
 				711F4E81201B1A000021620E /* SHRightImageButton.m */,
+				71D2700E2021700100C709AB /* SHBaseKeyChain.h */,
+				71D2700F2021700100C709AB /* SHBaseKeyChain.m */,
+				71D270112021709000C709AB /* SHBaseTextField.h */,
+				71D270122021709000C709AB /* SHBaseTextField.m */,
+				71D270142021714E00C709AB /* SHBaseActionSheet.h */,
+				71D270152021714E00C709AB /* SHBaseActionSheet.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -444,11 +459,14 @@
 				711F4E7B201B151C0021620E /* SHListAlbumCell.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
 				711F4E6F201B0FCF0021620E /* SHPhotoHelper.m in Sources */,
+				71D270132021709000C709AB /* SHBaseTextField.m in Sources */,
 				7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */,
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
 				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
+				71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
+				71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */,
 				71068E1920184CC7003F93CA /* SHTool.m in Sources */,
 				711F4E7F201B157E0021620E /* SHBaseAlbum.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
