@@ -34,6 +34,7 @@
 		716A54D1200F66FE00922596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D0200F66FE00922596 /* Assets.xcassets */; };
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
+		716E32722021BB16005F4100 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E32712021BB16005F4100 /* Security.framework */; };
 		7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41220106D10004C2A9D /* SHBaseViewController.m */; };
 		7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41320106D10004C2A9D /* SHBaseToast.m */; };
 		7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41D2010714C004C2A9D /* UIView+XibExtension.m */; };
@@ -93,6 +94,7 @@
 		716A54D5200F66FE00922596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716A54D6200F66FE00922596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716A54E9200F761B00922596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		716E32712021BB16005F4100 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7173D41220106D10004C2A9D /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
 		7173D41320106D10004C2A9D /* SHBaseToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseToast.m; sourceTree = "<group>"; };
 		7173D41420106D10004C2A9D /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716E32722021BB16005F4100 /* Security.framework in Frameworks */,
 				94928E6F4C8AB9B0FCBCB152 /* libPods-SHTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +298,7 @@
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				716E32712021BB16005F4100 /* Security.framework */,
 				716A54E9200F761B00922596 /* UIKit.framework */,
 				573EF6E0790454F7C93EE809 /* libPods-SHTool.a */,
 			);

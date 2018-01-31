@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonCryptor.h>
-#import <CommonCrypto/CommonCrypto.h>
-#import <Security/Security.h>
+
 
 @interface SHTool : NSObject
 
@@ -43,6 +41,6 @@
 // 3Des加解密
 + (NSString *)tripleDES:(NSString *)srcString
                  desKey:(NSString *)keyString
-       encryptOrDecrypt:(CCOperation)encryptOrDecrypt;
+       encryptOrDecrypt:(uint32_t)encryptOrDecrypt;
 
 @end

@@ -51,6 +51,7 @@
     [MD5bn addTarget:self action:@selector(md5Action:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:MD5bn];
     
+    NSLog(@"result = %@",[SHTool encodeMd5String:@"123"]);
     
 }
 

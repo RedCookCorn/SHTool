@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.resources = "SHTool/SHBase/Resource/*"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "Security"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"

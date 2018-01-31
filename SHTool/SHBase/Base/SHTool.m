@@ -8,6 +8,9 @@
 
 #import "SHTool.h"
 #import <GTMBase64/GTMBase64.h>
+#import <CommonCrypto/CommonCryptor.h>
+#import <CommonCrypto/CommonCrypto.h>
+#import <Security/Security.h>
 
 @implementation SHTool
 
@@ -232,7 +235,7 @@
 // 3Des加解密
 + (NSString *)tripleDES:(NSString *)srcString
                  desKey:(NSString *)keyString
-       encryptOrDecrypt:(CCOperation)encryptOrDecrypt {
+       encryptOrDecrypt:(uint32_t)encryptOrDecrypt {
     const void *vplainText;
     size_t plainTextBufferSize;
     
