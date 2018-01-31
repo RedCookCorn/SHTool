@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SHTool"
-  s.version      = "0.0.3.4"
+  s.version      = "0.0.4.0"
   s.summary      = "base tool for developer"
   s.homepage     = "https://github.com/zhenghaodd01/SHTool"
   s.license      = "MIT"
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "GTMBase64"
 
 end
