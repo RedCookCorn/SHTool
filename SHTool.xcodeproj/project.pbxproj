@@ -35,6 +35,7 @@
 		716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54D2200F66FE00922596 /* LaunchScreen.storyboard */; };
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
 		716E32722021BB16005F4100 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E32712021BB16005F4100 /* Security.framework */; };
+		716E32A02022B1CE005F4100 /* SHCartAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */; };
 		7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41220106D10004C2A9D /* SHBaseViewController.m */; };
 		7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41320106D10004C2A9D /* SHBaseToast.m */; };
 		7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41D2010714C004C2A9D /* UIView+XibExtension.m */; };
@@ -95,6 +96,8 @@
 		716A54D6200F66FE00922596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716A54E9200F761B00922596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		716E32712021BB16005F4100 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		716E329E2022B1CE005F4100 /* SHCartAnimationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCartAnimationTool.h; sourceTree = "<group>"; };
+		716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCartAnimationTool.m; sourceTree = "<group>"; };
 		7173D41220106D10004C2A9D /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
 		7173D41320106D10004C2A9D /* SHBaseToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseToast.m; sourceTree = "<group>"; };
 		7173D41420106D10004C2A9D /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				71068E1820184CC7003F93CA /* SHTool.m */,
 				711F4E3F201AC6C20021620E /* SHAudioSessionTool.h */,
 				711F4E40201AC6C30021620E /* SHAudioSessionTool.m */,
+				716E329E2022B1CE005F4100 /* SHCartAnimationTool.h */,
+				716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				711F4E7B201B151C0021620E /* SHListAlbumCell.m in Sources */,
 				716A54D7200F66FE00922596 /* main.m in Sources */,
 				711F4E6F201B0FCF0021620E /* SHPhotoHelper.m in Sources */,
+				716E32A02022B1CE005F4100 /* SHCartAnimationTool.m in Sources */,
 				71D270132021709000C709AB /* SHBaseTextField.m in Sources */,
 				7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */,
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
