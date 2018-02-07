@@ -36,6 +36,7 @@
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
 		716E32722021BB16005F4100 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E32712021BB16005F4100 /* Security.framework */; };
 		716E32A02022B1CE005F4100 /* SHCartAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */; };
+		716E34882028143B005F4100 /* SHBaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E34872028143B005F4100 /* SHBaseTestVC.m */; };
 		7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41220106D10004C2A9D /* SHBaseViewController.m */; };
 		7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41320106D10004C2A9D /* SHBaseToast.m */; };
 		7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41D2010714C004C2A9D /* UIView+XibExtension.m */; };
@@ -98,6 +99,8 @@
 		716E32712021BB16005F4100 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		716E329E2022B1CE005F4100 /* SHCartAnimationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCartAnimationTool.h; sourceTree = "<group>"; };
 		716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCartAnimationTool.m; sourceTree = "<group>"; };
+		716E34862028143B005F4100 /* SHBaseTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseTestVC.h; sourceTree = "<group>"; };
+		716E34872028143B005F4100 /* SHBaseTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseTestVC.m; sourceTree = "<group>"; };
 		7173D41220106D10004C2A9D /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
 		7173D41320106D10004C2A9D /* SHBaseToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseToast.m; sourceTree = "<group>"; };
 		7173D41420106D10004C2A9D /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 		716A54C6200F66FE00922596 /* SHTool */ = {
 			isa = PBXGroup;
 			children = (
+				716E3481202813D0005F4100 /* Apps */,
 				716A54E1200F6E8900922596 /* SHBase */,
 				716A54C7200F66FE00922596 /* AppDelegate.h */,
 				716A54C8200F66FE00922596 /* AppDelegate.m */,
@@ -247,6 +251,23 @@
 				7173D4A92011E44F004C2A9D /* SHBaseManager.m */,
 			);
 			path = SHBase;
+			sourceTree = "<group>";
+		};
+		716E3481202813D0005F4100 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				716E34852028143B005F4100 /* Modules */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		716E34852028143B005F4100 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				716E34862028143B005F4100 /* SHBaseTestVC.h */,
+				716E34872028143B005F4100 /* SHBaseTestVC.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7173D41120106D10004C2A9D /* Common */ = {
@@ -477,6 +498,7 @@
 				71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
 				71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */,
+				716E34882028143B005F4100 /* SHBaseTestVC.m in Sources */,
 				71068E1920184CC7003F93CA /* SHTool.m in Sources */,
 				711F4E7F201B157E0021620E /* SHBaseAlbum.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
