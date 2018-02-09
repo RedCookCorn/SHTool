@@ -13,6 +13,7 @@
 
 #import "SHPhotoHelper.h"
 #import "SHTool.h"
+#import "SHQRCodeVC.h"
 
 @interface ViewController ()
 
@@ -34,6 +35,13 @@
     [bn addTarget:self action:@selector(imageSelect) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:bn];
     
+    UIButton *bnScan = [UIButton buttonWithType:UIButtonTypeCustom];
+    bnScan.frame = CGRectMake(180, 64, 100, 40);
+    [bnScan setTitle:@"扫描" forState:UIControlStateNormal];
+    [bnScan setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [bnScan addTarget:self action:@selector(scanSelect) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bnScan];
+    
     
     _encodeField = [[UITextField alloc] initWithFrame:CGRectMake(0, 110, 100, 35)];
     _encodeField.placeholder = @"请输入加密文字";
@@ -52,9 +60,7 @@
     [self.view addSubview:MD5bn];
     
     NSLog(@"result = %@",[SHTool encodeMd5String:@"123"]);
-    
-    
-    
+
 }
 
 - (void)imageSelect {
@@ -63,5 +69,12 @@
     }];
 }
 
+- (void)scanSelect {
+    SHQRCodeVC *vc = [SHQRCodeVC new];
+    vc.resultBlock = ^(NSString *value) {
+        NSLog(@"value = %@", value);
+    };
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

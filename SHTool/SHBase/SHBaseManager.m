@@ -37,6 +37,10 @@ static id _instance;
         _commonSheetArrayButtonColor = [UIColor colorWithRed:254/255.0f green:254/255.0f blue:254/255.0f alpha:1.0f];
         _commonSheetSeperatorColor = [UIColor colorWithRed:206/255.0f green:206/255.0f blue:206/255.0f alpha:1.0f];
         _commonSheetButtonHeight = 44.0f;
+        
+        _scanBounds = CGRectMake(0, 0, 220, 220);
+        _scanBackgroudImage = [UIImage imageNamed:@"sh_scan_bg_image"];
+        _scanLineImage = [UIImage imageNamed:@"sh_scan_line_image"];
     }
     return self;
 }

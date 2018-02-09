@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		71068DC92016E821003F93CA /* CCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71068DC82016E821003F93CA /* CCA.plist */; };
 		71068E1920184CC7003F93CA /* SHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71068E1820184CC7003F93CA /* SHTool.m */; };
+		711A0B55202D432200385776 /* SHQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A0B54202D432200385776 /* SHQRCodeVC.m */; };
+		711A0B57202D4ACB00385776 /* sh_scan_bg_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711A0B56202D4ACB00385776 /* sh_scan_bg_image@2x.png */; };
+		711A0B59202D4AEF00385776 /* sh_scan_line_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711A0B58202D4AEF00385776 /* sh_scan_line_image@2x.png */; };
 		711F4E41201AC6C30021620E /* SHAudioSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E40201AC6C30021620E /* SHAudioSessionTool.m */; };
 		711F4E6F201B0FCF0021620E /* SHPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E6E201B0FCF0021620E /* SHPhotoHelper.m */; };
 		711F4E72201B108C0021620E /* SHPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F4E71201B108C0021620E /* SHPhotoVC.m */; };
@@ -59,6 +62,10 @@
 		71068DC82016E821003F93CA /* CCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CCA.plist; sourceTree = "<group>"; };
 		71068E1720184CC7003F93CA /* SHTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTool.h; sourceTree = "<group>"; };
 		71068E1820184CC7003F93CA /* SHTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTool.m; sourceTree = "<group>"; };
+		711A0B53202D432200385776 /* SHQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHQRCodeVC.h; sourceTree = "<group>"; };
+		711A0B54202D432200385776 /* SHQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHQRCodeVC.m; sourceTree = "<group>"; };
+		711A0B56202D4ACB00385776 /* sh_scan_bg_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_scan_bg_image@2x.png"; sourceTree = "<group>"; };
+		711A0B58202D4AEF00385776 /* sh_scan_line_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_scan_line_image@2x.png"; sourceTree = "<group>"; };
 		711F4E3F201AC6C20021620E /* SHAudioSessionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHAudioSessionTool.h; sourceTree = "<group>"; };
 		711F4E40201AC6C30021620E /* SHAudioSessionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAudioSessionTool.m; sourceTree = "<group>"; };
 		711F4E6D201B0FCF0021620E /* SHPhotoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPhotoHelper.h; sourceTree = "<group>"; };
@@ -159,6 +166,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		711A0B52202D3D0A00385776 /* SHScan */ = {
+			isa = PBXGroup;
+			children = (
+				711A0B53202D432200385776 /* SHQRCodeVC.h */,
+				711A0B54202D432200385776 /* SHQRCodeVC.m */,
+			);
+			name = SHScan;
+			path = Function/SHScan;
+			sourceTree = "<group>";
+		};
 		711F4E6B201B0F9E0021620E /* Function */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +206,8 @@
 		711F4E83201B1BE20021620E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				711A0B58202D4AEF00385776 /* sh_scan_line_image@2x.png */,
+				711A0B56202D4ACB00385776 /* sh_scan_bg_image@2x.png */,
 				711F4F1B201EF4640021620E /* sh_image_camera@2x.png */,
 				711F4F1A201EF4640021620E /* sh_image_camera@3x.png */,
 				711F4E8F201EBC4B0021620E /* sh_image_selected@2x.png */,
@@ -242,6 +261,7 @@
 		716A54E1200F6E8900922596 /* SHBase */ = {
 			isa = PBXGroup;
 			children = (
+				711A0B52202D3D0A00385776 /* SHScan */,
 				711F4E6B201B0F9E0021620E /* Function */,
 				71068E1620184CBB003F93CA /* Base */,
 				7173D49D2011BD46004C2A9D /* Resource */,
@@ -411,11 +431,13 @@
 				711F4E77201B149C0021620E /* SHPhotoCell.xib in Resources */,
 				711F4F1D201EF4640021620E /* sh_image_camera@2x.png in Resources */,
 				71068DC92016E821003F93CA /* CCA.plist in Resources */,
+				711A0B57202D4ACB00385776 /* sh_scan_bg_image@2x.png in Resources */,
 				711F4E91201EBC4B0021620E /* sh_image_selected@3x.png in Resources */,
 				711F4E87201B1BE20021620E /* sh_photo_title_down@3x.png in Resources */,
 				716A54D1200F66FE00922596 /* Assets.xcassets in Resources */,
 				711F4E86201B1BE20021620E /* sh_photo_title_down@2x.png in Resources */,
 				711F4E92201EBC4B0021620E /* sh_image_unselect@3x.png in Resources */,
+				711A0B59202D4AEF00385776 /* sh_scan_line_image@2x.png in Resources */,
 				716A54CF200F66FE00922596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +517,7 @@
 				7173D44A20109B20004C2A9D /* UITableViewCell+SHExtension.m in Sources */,
 				7173D49C2011B42B004C2A9D /* SHBaseAlert.m in Sources */,
 				7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */,
+				711A0B55202D432200385776 /* SHQRCodeVC.m in Sources */,
 				71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
 				71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */,

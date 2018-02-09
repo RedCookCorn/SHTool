@@ -31,6 +31,12 @@
 @property (nonatomic, strong) UIImage *commonSHPhotoTitleImageDown;
 @property (nonatomic, strong) UIColor *commonSHPhotoTitleColor;
 
+// QRCodeVC
+@property (nonatomic, assign) CGRect scanBounds;
+@property (nonatomic, strong) UIImage *scanBackgroudImage;
+@property (nonatomic, strong) UIImage *scanLineImage;
+
+
 
 + (instancetype)shareInstance;
 

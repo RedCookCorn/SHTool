@@ -25,8 +25,8 @@
     [SHBaseManager shareInstance].commonPickerSeperatorColor = [UIColor lightGrayColor];
     
     
-    UINavigationController *rootvc = [[UINavigationController alloc] initWithRootViewController:[SHBaseTestVC new]];
-    self.window.rootViewController = rootvc;
+//    UINavigationController *rootvc = [[UINavigationController alloc] initWithRootViewController:[SHBaseTestVC new]];
+//    self.window.rootViewController = rootvc;
     
     return YES;
 }
