@@ -51,6 +51,7 @@
 		7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A92011E44F004C2A9D /* SHBaseManager.m */; };
 		7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4AC2011E68D004C2A9D /* SHBasePicker.m */; };
 		71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */; };
+		71CE7F172041208E00FE6FBD /* UIButton+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CE7F162041208E00FE6FBD /* UIButton+SHExtension.m */; };
 		71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D2700F2021700100C709AB /* SHBaseKeyChain.m */; };
 		71D270132021709000C709AB /* SHBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D270122021709000C709AB /* SHBaseTextField.m */; };
 		71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D270152021714E00C709AB /* SHBaseActionSheet.m */; };
@@ -130,6 +131,8 @@
 		7173D4AC2011E68D004C2A9D /* SHBasePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBasePicker.m; sourceTree = "<group>"; };
 		71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAreaPicker.h; sourceTree = "<group>"; };
 		71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAreaPicker.m; sourceTree = "<group>"; };
+		71CE7F152041208E00FE6FBD /* UIButton+SHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SHExtension.h"; sourceTree = "<group>"; };
+		71CE7F162041208E00FE6FBD /* UIButton+SHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SHExtension.m"; sourceTree = "<group>"; };
 		71D2700E2021700100C709AB /* SHBaseKeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseKeyChain.h; sourceTree = "<group>"; };
 		71D2700F2021700100C709AB /* SHBaseKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseKeyChain.m; sourceTree = "<group>"; };
 		71D270112021709000C709AB /* SHBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseTextField.h; sourceTree = "<group>"; };
@@ -328,6 +331,8 @@
 				7173D44920109B20004C2A9D /* UITableViewCell+SHExtension.m */,
 				7173D44B20109C9A004C2A9D /* UICollectionViewCell+SHExtension.h */,
 				7173D44C20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m */,
+				71CE7F152041208E00FE6FBD /* UIButton+SHExtension.h */,
+				71CE7F162041208E00FE6FBD /* UIButton+SHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
 				711F4E72201B108C0021620E /* SHPhotoVC.m in Sources */,
 				711F4E82201B1A000021620E /* SHRightImageButton.m in Sources */,
+				71CE7F172041208E00FE6FBD /* UIButton+SHExtension.m in Sources */,
 				71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */,
 				711F4E76201B149C0021620E /* SHPhotoCell.m in Sources */,
 				7173D42120107DB9004C2A9D /* UIColor+SHExtension.m in Sources */,
