@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "SHBaseManager.h"
 
-#import "SHBaseTestVC.h"
-
 @interface AppDelegate ()
 
 @end
@@ -23,10 +21,6 @@
     [SHBaseManager shareInstance].commonPickerChooseBgColor = [UIColor redColor];
     [SHBaseManager shareInstance].commonPickerSureColor = [UIColor blueColor];
     [SHBaseManager shareInstance].commonPickerSeperatorColor = [UIColor lightGrayColor];
-    
-    
-//    UINavigationController *rootvc = [[UINavigationController alloc] initWithRootViewController:[SHBaseTestVC new]];
-//    self.window.rootViewController = rootvc;
     
     return YES;
 }

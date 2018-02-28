@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		712DADD920465603006B1D15 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 712DADDA20465603006B1D15 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				712DADDD20465613006B1D15 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		71068DC92016E821003F93CA /* CCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71068DC82016E821003F93CA /* CCA.plist */; };
 		71068E1920184CC7003F93CA /* SHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71068E1820184CC7003F93CA /* SHTool.m */; };
@@ -31,6 +45,8 @@
 		711F4E93201EBC4B0021620E /* sh_image_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4E8F201EBC4B0021620E /* sh_image_selected@2x.png */; };
 		711F4F1C201EF4640021620E /* sh_image_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4F1A201EF4640021620E /* sh_image_camera@3x.png */; };
 		711F4F1D201EF4640021620E /* sh_image_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4F1B201EF4640021620E /* sh_image_camera@2x.png */; };
+		712DADE0204662D2006B1D15 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712DADDF204662D2006B1D15 /* HomeVC.m */; };
+		712DADE520467EC1006B1D15 /* BaseRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 712DADE420467EC1006B1D15 /* BaseRoute.m */; };
 		716A54C9200F66FE00922596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54C8200F66FE00922596 /* AppDelegate.m */; };
 		716A54CC200F66FE00922596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54CB200F66FE00922596 /* ViewController.m */; };
 		716A54CF200F66FE00922596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54CD200F66FE00922596 /* Main.storyboard */; };
@@ -39,7 +55,6 @@
 		716A54D7200F66FE00922596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54D6200F66FE00922596 /* main.m */; };
 		716E32722021BB16005F4100 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E32712021BB16005F4100 /* Security.framework */; };
 		716E32A02022B1CE005F4100 /* SHCartAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */; };
-		716E34882028143B005F4100 /* SHBaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E34872028143B005F4100 /* SHBaseTestVC.m */; };
 		7173D41620106D10004C2A9D /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41220106D10004C2A9D /* SHBaseViewController.m */; };
 		7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41320106D10004C2A9D /* SHBaseToast.m */; };
 		7173D41E2010714C004C2A9D /* UIView+XibExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D41D2010714C004C2A9D /* UIView+XibExtension.m */; };
@@ -50,6 +65,9 @@
 		7173D4A42011BF48004C2A9D /* SHBaseAddressPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A32011BF48004C2A9D /* SHBaseAddressPicker.m */; };
 		7173D4AA2011E44F004C2A9D /* SHBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4A92011E44F004C2A9D /* SHBaseManager.m */; };
 		7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D4AC2011E68D004C2A9D /* SHBasePicker.m */; };
+		7177B23D20464B4B0056B58D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7177B23C20464B4B0056B58D /* Home.storyboard */; };
+		7177B23F20464B800056B58D /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7177B23E20464B800056B58D /* Content.storyboard */; };
+		7177B24120464B900056B58D /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7177B24020464B900056B58D /* Person.storyboard */; };
 		71C460432015C78000DF9E3F /* SHBaseAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */; };
 		71CE7F172041208E00FE6FBD /* UIButton+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CE7F162041208E00FE6FBD /* UIButton+SHExtension.m */; };
 		71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D2700F2021700100C709AB /* SHBaseKeyChain.m */; };
@@ -93,6 +111,10 @@
 		711F4E8F201EBC4B0021620E /* sh_image_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_image_selected@2x.png"; sourceTree = "<group>"; };
 		711F4F1A201EF4640021620E /* sh_image_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_image_camera@3x.png"; sourceTree = "<group>"; };
 		711F4F1B201EF4640021620E /* sh_image_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sh_image_camera@2x.png"; sourceTree = "<group>"; };
+		712DADDE204662D2006B1D15 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		712DADDF204662D2006B1D15 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		712DADE320467EC1006B1D15 /* BaseRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRoute.h; sourceTree = "<group>"; };
+		712DADE420467EC1006B1D15 /* BaseRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRoute.m; sourceTree = "<group>"; };
 		716A54C4200F66FE00922596 /* SHTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A54C7200F66FE00922596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716A54C8200F66FE00922596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,8 +129,6 @@
 		716E32712021BB16005F4100 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		716E329E2022B1CE005F4100 /* SHCartAnimationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCartAnimationTool.h; sourceTree = "<group>"; };
 		716E329F2022B1CE005F4100 /* SHCartAnimationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCartAnimationTool.m; sourceTree = "<group>"; };
-		716E34862028143B005F4100 /* SHBaseTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseTestVC.h; sourceTree = "<group>"; };
-		716E34872028143B005F4100 /* SHBaseTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseTestVC.m; sourceTree = "<group>"; };
 		7173D41220106D10004C2A9D /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
 		7173D41320106D10004C2A9D /* SHBaseToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseToast.m; sourceTree = "<group>"; };
 		7173D41420106D10004C2A9D /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
@@ -129,6 +149,9 @@
 		7173D4A92011E44F004C2A9D /* SHBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseManager.m; sourceTree = "<group>"; };
 		7173D4AB2011E68D004C2A9D /* SHBasePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBasePicker.h; sourceTree = "<group>"; };
 		7173D4AC2011E68D004C2A9D /* SHBasePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBasePicker.m; sourceTree = "<group>"; };
+		7177B23C20464B4B0056B58D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7177B23E20464B800056B58D /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		7177B24020464B900056B58D /* Person.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Person.storyboard; sourceTree = "<group>"; };
 		71C460412015C78000DF9E3F /* SHBaseAreaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBaseAreaPicker.h; sourceTree = "<group>"; };
 		71C460422015C78000DF9E3F /* SHBaseAreaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBaseAreaPicker.m; sourceTree = "<group>"; };
 		71CE7F152041208E00FE6FBD /* UIButton+SHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SHExtension.h"; sourceTree = "<group>"; };
@@ -225,6 +248,39 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		712DADD220464F91006B1D15 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				712DADDE204662D2006B1D15 /* HomeVC.h */,
+				712DADDF204662D2006B1D15 /* HomeVC.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		712DADD320464F91006B1D15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		712DADE120466878006B1D15 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				712DADE220466878006B1D15 /* Base */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		712DADE220466878006B1D15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				712DADE320467EC1006B1D15 /* BaseRoute.h */,
+				712DADE420467EC1006B1D15 /* BaseRoute.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		716A54BB200F66FE00922596 = {
 			isa = PBXGroup;
 			children = (
@@ -279,18 +335,12 @@
 		716E3481202813D0005F4100 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				716E34852028143B005F4100 /* Modules */,
+				712DADE120466878006B1D15 /* Common */,
+				7177B23A20464B410056B58D /* Content */,
+				7177B23B20464B410056B58D /* Home */,
+				7177B23920464B410056B58D /* Setting */,
 			);
 			path = Apps;
-			sourceTree = "<group>";
-		};
-		716E34852028143B005F4100 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				716E34862028143B005F4100 /* SHBaseTestVC.h */,
-				716E34872028143B005F4100 /* SHBaseTestVC.m */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		7173D41120106D10004C2A9D /* Common */ = {
@@ -346,6 +396,32 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		7177B23920464B410056B58D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7177B24020464B900056B58D /* Person.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7177B23A20464B410056B58D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7177B23E20464B800056B58D /* Content.storyboard */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		7177B23B20464B410056B58D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				712DADD220464F91006B1D15 /* Modules */,
+				712DADD320464F91006B1D15 /* Views */,
+				7177B23C20464B4B0056B58D /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		99D90F756B37D19DBFF8FB55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +473,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "郑浩";
 				TargetAttributes = {
+					712DADD920465603006B1D15 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					716A54C3200F66FE00922596 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -417,6 +497,7 @@
 			projectRoot = "";
 			targets = (
 				716A54C3200F66FE00922596 /* SHTool */,
+				712DADD920465603006B1D15 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -430,6 +511,7 @@
 				711F4F1C201EF4640021620E /* sh_image_camera@3x.png in Resources */,
 				716A54D4200F66FE00922596 /* LaunchScreen.storyboard in Resources */,
 				711F4E90201EBC4B0021620E /* sh_image_unselect@2x.png in Resources */,
+				7177B23F20464B800056B58D /* Content.storyboard in Resources */,
 				711F4E8A201EBB860021620E /* sh_back_arrow@2x.png in Resources */,
 				711F4E7C201B151C0021620E /* SHListAlbumCell.xib in Resources */,
 				711F4E8B201EBB860021620E /* sh_back_arrow@3x.png in Resources */,
@@ -441,6 +523,8 @@
 				711F4E87201B1BE20021620E /* sh_photo_title_down@3x.png in Resources */,
 				716A54D1200F66FE00922596 /* Assets.xcassets in Resources */,
 				711F4E86201B1BE20021620E /* sh_photo_title_down@2x.png in Resources */,
+				7177B23D20464B4B0056B58D /* Home.storyboard in Resources */,
+				7177B24120464B900056B58D /* Person.storyboard in Resources */,
 				711F4E92201EBC4B0021620E /* sh_image_unselect@3x.png in Resources */,
 				711A0B59202D4AEF00385776 /* sh_scan_line_image@2x.png in Resources */,
 				716A54CF200F66FE00922596 /* Main.storyboard in Resources */,
@@ -464,6 +548,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHTool/Pods-SHTool-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		712DADDD20465613006B1D15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\n# 指定编码\nexport LANG=\"zh_CN.UTF-8\"\nexport LC_COLLATE=\"zh_CN.UTF-8\"\nexport LC_CTYPE=\"zh_CN.UTF-8\"\nexport LC_MESSAGES=\"zh_CN.UTF-8\"\nexport LC_MONETARY=\"zh_CN.UTF-8\"\nexport LC_NUMERIC=\"zh_CN.UTF-8\"\nexport LC_TIME=\"zh_CN.UTF-8\"\nexport LC_ALL=\n\nfunction checkDepend () {\n    command -v xcpretty >/dev/null 2>&1 || {\n        echo >&2 \"I require xcpretty but it's not installed.  Install：gem install xcpretty\";\n        exit\n    }\n    command -v oclint-json-compilation-database >/dev/null 2>&1 || {\n        echo >&2 \"I require oclint-json-compilation-database but it's not installed.  Install：brew install oclint\";\n        exit\n    }\n}\n\nfunction oclintForProject () {\n    \n    # 检测依赖\n    checkDepend\n    \n    projectName=$1\n    scheme=$2\n    reportType=$3\n    \n    REPORT_PMD=\"pmd\"\n    REPORT_XCODE=\"xcode\"\n    \n    myworkspace=${projectName}\n    myscheme=${scheme}\n    echo \"myworkspace是：${myworkspace}\"\n    echo \"myscheme是：${myscheme}\"\n    echo \"reportType为：${reportType}\"\n    \n    # 清除上次编译数据\n    if [ -d ./build/derivedData ]; then\n    echo '-----清除上次编译数据derivedData-----'\n    rm -rf ./build/derivedData\n    fi\n    \n    # xcodebuild -workspace $myworkspace -scheme $myscheme clean\n    xcodebuild clean\n    \n    echo '-----开始编译-----'\n    \n    # 生成编译数据\n    xcodebuild -workspace ${myworkspace} -scheme ${myscheme} -sdk iphonesimulator -derivedDataPath ./build/derivedData -configuration Debug COMPILER_INDEX_STORE_ENABLE=NO | xcpretty -r json-compilation-database -o compile_commands.json\n    \n    \n    if [ -f ./compile_commands.json ]\n    then\n    echo '-----编译数据生成完毕-----'\n    else\n    echo \"-----生成编译数据失败-----\"\n    return -1\n    fi\n    \n    echo '-----分析中-----'\n    \n    # 自定义排除警告的目录，将目录字符串加到数组里面\n    # 转化为：-e Debug.m -e Port.m -e Test\n    exclude_files=(\"cardloan_js\" \"Pods\")\n    \n    exclude=\"\"\n    for i in ${exclude_files[@]}; do\n    exclude=${exclude}\"-e \"${i}\" \"\n    done\n    echo \"排除目录：${exclude}\"\n    \n    # 分析reportType\n    if [[ ${reportType} =~ ${REPORT_PMD} ]]\n    then\n    nowReportType=\"-report-type pmd -o pmd.xml\"\n    else\n    nowReportType=\"-report-type xcode\"\n    fi\n    # 自定义report 如：\n    # nowReportType=\"-report-type html -o oclint_result.html\"\n    \n    # 生成报表\n    oclint-json-compilation-database ${exclude} -- \\\n    ${nowReportType} \\\n    -e Pods \\\n    -rc LONG_LINE=200 \\\n    -disable-rule ShortVariableName \\\n    -disable-rule ObjCAssignIvarOutsideAccessors \\\n    -disable-rule AssignIvarOutsideAccessors \\\n    -rc MINIMUM_CASES_IN_SWITCH=3 \\\n    -rc CYCLOMATIC_COMPLEXITY=10 \\\n    -rc LONG_CLASS=700 \\\n    -rc LONG_LINE=200 \\\n    -rc NCSS_METHOD=40 \\\n    -rc NESTED_BLOCK_DEPTH=5 \\\n    -rc TOO_MANY_FIELDS=20 \\\n    -rc TOO_MANY_METHODS=30 \\\n    -rc TOO_MANY_PARAMETERS=6\n    -max-priority-1=100000 \\\n    -max-priority-2=100000 \\\n    -max-priority-3=100000\n    \n    rm compile_commands.json\n    if [[ ${reportType} =~ ${REPORT_PMD} ]] && [ ! -f ./pmd.xml ]\n    then\n    echo \"-----分析失败-----\"\n    return -1\n    else\n    echo '-----分析完毕-----'\n    return 0\n    fi\n}\n\n# 替换workspace的名字\nmyworkspace=\"SHTool.xcworkspace\"\n# 替换scheme的名字\nmyscheme=\"SHTool\"\n# 输出方式 xcode/pmd\nreportType=\"xcode\"\n\noclintForProject ${myworkspace} ${myscheme} ${reportType}\n";
 		};
 		A83C9E5E529902D1F643D6A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -527,9 +624,10 @@
 				71D270162021714E00C709AB /* SHBaseActionSheet.m in Sources */,
 				7173D4AD2011E68D004C2A9D /* SHBasePicker.m in Sources */,
 				71D270102021700100C709AB /* SHBaseKeyChain.m in Sources */,
-				716E34882028143B005F4100 /* SHBaseTestVC.m in Sources */,
 				71068E1920184CC7003F93CA /* SHTool.m in Sources */,
 				711F4E7F201B157E0021620E /* SHBaseAlbum.m in Sources */,
+				712DADE520467EC1006B1D15 /* BaseRoute.m in Sources */,
+				712DADE0204662D2006B1D15 /* HomeVC.m in Sources */,
 				7173D41720106D10004C2A9D /* SHBaseToast.m in Sources */,
 				716A54C9200F66FE00922596 /* AppDelegate.m in Sources */,
 				711F4E41201AC6C30021620E /* SHAudioSessionTool.m in Sources */,
@@ -559,6 +657,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		712DADDB20465603006B1D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6CYAWT7QB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		712DADDC20465603006B1D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6CYAWT7QB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		716A54D8200F66FE00922596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -656,7 +772,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -696,6 +812,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		712DADDA20465603006B1D15 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712DADDB20465603006B1D15 /* Debug */,
+				712DADDC20465603006B1D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		716A54BF200F66FE00922596 /* Build configuration list for PBXProject "SHTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
