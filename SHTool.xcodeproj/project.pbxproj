@@ -47,6 +47,7 @@
 		711F4F1D201EF4640021620E /* sh_image_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711F4F1B201EF4640021620E /* sh_image_camera@2x.png */; };
 		712DADE0204662D2006B1D15 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712DADDF204662D2006B1D15 /* HomeVC.m */; };
 		712DADE520467EC1006B1D15 /* BaseRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 712DADE420467EC1006B1D15 /* BaseRoute.m */; };
+		715F8091205BD45F0045BEB0 /* CellExVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 715F8090205BD45F0045BEB0 /* CellExVC.m */; };
 		716A54C9200F66FE00922596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54C8200F66FE00922596 /* AppDelegate.m */; };
 		716A54CC200F66FE00922596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A54CB200F66FE00922596 /* ViewController.m */; };
 		716A54CF200F66FE00922596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A54CD200F66FE00922596 /* Main.storyboard */; };
@@ -115,6 +116,8 @@
 		712DADDF204662D2006B1D15 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		712DADE320467EC1006B1D15 /* BaseRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRoute.h; sourceTree = "<group>"; };
 		712DADE420467EC1006B1D15 /* BaseRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRoute.m; sourceTree = "<group>"; };
+		715F808F205BD45F0045BEB0 /* CellExVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellExVC.h; sourceTree = "<group>"; };
+		715F8090205BD45F0045BEB0 /* CellExVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellExVC.m; sourceTree = "<group>"; };
 		716A54C4200F66FE00922596 /* SHTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A54C7200F66FE00922596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716A54C8200F66FE00922596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 			children = (
 				712DADDE204662D2006B1D15 /* HomeVC.h */,
 				712DADDF204662D2006B1D15 /* HomeVC.m */,
+				715F808F205BD45F0045BEB0 /* CellExVC.h */,
+				715F8090205BD45F0045BEB0 /* CellExVC.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -603,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7173D44D20109C9A004C2A9D /* UICollectionViewCell+SHExtension.m in Sources */,
+				715F8091205BD45F0045BEB0 /* CellExVC.m in Sources */,
 				716A54CC200F66FE00922596 /* ViewController.m in Sources */,
 				711F4E72201B108C0021620E /* SHPhotoVC.m in Sources */,
 				711F4E82201B1A000021620E /* SHRightImageButton.m in Sources */,
